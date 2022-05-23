@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="semana7.ConsultarRegistro">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Listado de Estudiantes"></Label>
+                <ListView x:Name="ListarUsuarios" ItemSelected="ListarUsuarios_ItemSelected">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding nombre}" Detail="{Binding usuario}"></TextCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+
+                </ListView>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

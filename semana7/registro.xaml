@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="semana7.Models.registroxaml">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Registro" HorizontalOptions="Center" FontSize="20"></Label>
+            <Entry Placeholder="Nombre" x:Name="txtNombre" Margin="20,30,20,0"></Entry>
+            <Entry Placeholder="Usuario" x:Name="txtUsuario" Margin="20,30,20,0"></Entry>
+            <Entry Placeholder="Contrasela" IsPassword="True" x:Name="txtContrasenia" Margin="20,30,20,0"></Entry>
+            <Button Text="Crear" x:Name="btnCrear" CornerRadius="15" Margin="20,30,20,0" BackgroundColor="Green" TextColor="White" Clicked="btnCrear_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
